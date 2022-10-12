@@ -1,2 +1,2 @@
 # Data-Structures-and-Algorithms
-Collection of LeetCode questions to hone my problem solving skills
+Collection of LeetCode questions and their solutions to hone my problem solving skills
