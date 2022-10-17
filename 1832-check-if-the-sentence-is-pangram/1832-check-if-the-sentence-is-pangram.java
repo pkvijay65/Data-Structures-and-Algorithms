@@ -6,13 +6,15 @@ class Solution {
             hs.add(sentence.charAt(i));
         }
         
-        for (int i = 0; i<26; i++){
-            char ch = (char)('a' + i);
-            if (!hs.contains(ch)){
-                return false;
-            }
-        }
-        return true;
+        return hs.size() == 26;
+        
+        // for (int i = 0; i<26; i++){
+        //     char ch = (char)('a' + i);
+        //     if (!hs.contains(ch)){
+        //         return false;
+        //     }
+        // }
+        // return true;
         
     }
 }
