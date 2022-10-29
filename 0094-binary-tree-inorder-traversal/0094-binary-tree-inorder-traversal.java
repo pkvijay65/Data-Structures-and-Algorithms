@@ -20,15 +20,12 @@ class Solution {
         Stack<TreeNode> st = new Stack<TreeNode>();
         TreeNode curNode = root;
 
-        while (true){
+        while (!st.isEmpty() || curNode != null ){
             if (curNode != null){
                 st.push(curNode);
                 curNode = curNode.left;
             }
             else {
-                if (st.isEmpty()){
-                    break;
-                }
                 curNode = st.pop();
                 ans.add(curNode.val);
                 curNode = curNode.right;
