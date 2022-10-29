@@ -27,11 +27,39 @@ class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         ArrayList<Integer> ans = new ArrayList<Integer>();
         
-        inOrder(root, ans);
+        TreeNode cur = root;
+        
+        while (cur!= null){
+            
+            if (cur.left == null){
+                ans.add(cur.val);
+                cur = cur.right;
+            }
+            
+            else{
+                TreeNode temp = cur.left;
+                
+                while (temp.right != null && temp.right !=cur){
+                    temp = temp.right;
+                }
+                
+                if (temp.right == null){
+                    temp.right = cur;
+                    cur = cur.left;
+                }
+                
+                if (temp.right == cur){
+                    ans.add(cur.val);
+                    temp.right = null;
+                    cur = cur.right;
+                }
+            }
+        }
         
         return ans;
         
-        
+//         // inOrder(root, ans); 
+//         // return ans;
 
 //         Stack<TreeNode> st = new Stack<TreeNode>();
 //         TreeNode curNode = root;
