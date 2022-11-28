@@ -44,10 +44,10 @@ class Solution {
         if (n<0){
             return 0;
         }
-        if (n == 0){
-            dp[0] = arr[0];
-            return dp[0];
-        }
+        // if (n == 0){
+        //     dp[0] = arr[0];
+        //     return dp[0];
+        // }
         
         // if (n == 1){
         //     dp[1] = Math.max(arr[0], arr[1]);
