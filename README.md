@@ -1,2 +1,2 @@
 # Data-Structures-and-Algorithms
-Collection of LeetCode questions and their solutions to hone my problem solving skills
+Bunch of DSA questions I keep solving for fun :p
